@@ -1,0 +1,26 @@
+Alright, let’s talk about something pretty serious that dropped recently — especially if you’re running MongoDB anywhere in your stack.
+
+On December 19th, 2024, MongoDB disclosed a high-severity vulnerability that’s now being called MongoBleed, officially tracked as CVE-2025-14847. And this one’s not just theoretical. By the end of December, it was already being actively exploited in the wild, and yep — there’s a public proof-of-concept floating around.
+
+So what’s actually going on here?
+
+At a high level, MongoBleed is an unauthenticated memory leak. In plain English, an attacker doesn’t need credentials. They can send specially crafted, Zlib-compressed packets to a MongoDB server and basically “bleed” random chunks of memory straight out of it.
+
+And because this is heap memory, the data you get back is whatever happened to be sitting there at the time — which often includes things like plain-text usernames and passwords, auth tokens, and even bits of customer data from other active sessions. Not great.
+
+What makes this scarier is the scale. This isn’t limited to some obscure version. It impacts pretty much every modern MongoDB branch — 4.4, 5.0, 6.0, 7.0, and even 8.0. And even worse, end-of-life versions are likely vulnerable too, but they’re not getting patches because… well, they’re end of life.
+
+To add fuel to the fire, there are reports of a new GUI-based exploitation tool. This isn’t just a command-line proof-of-concept anymore. Attackers can now dump memory in chunks — like 10MB at a time — or even watch a live feed of memory being leaked as it happens. That’s… unsettling.
+
+So what should you do if you’re running MongoDB yourself?
+
+First priority: upgrade immediately. Fixed versions include 8.0.4, 7.0.16, and 6.0.20. If you absolutely can’t upgrade right away — or if you’re stuck on an unsupported version — you need to disable the Zlib network compressor in your MongoDB config. That shuts down the main attack path.
+
+But — and this part is really important — patching alone isn’t enough.
+
+Because this bug leaks secrets straight from memory, you have to assume that anything in memory before the fix could already be compromised. That means rotating database passwords, API keys, service credentials — all of it once you’re patched.
+
+
+Think of it like this: imagine your database memory is a shared whiteboard in a busy office. Normally, the office is locked. MongoBleed is like a crack in the window that lets someone outside snap photos of whatever’s written on that board — passwords, customer names, private notes, everything.
+
+Patching is like finally closing the curtains. But rotating your credentials? That’s wiping the whiteboard clean and writing new stuff — because you have to assume someone already took pictures of what was there before.
