@@ -16,7 +16,7 @@ So deeper collaboration between cloud vendors, security vendors, and internal te
 
 🔐 What’s Next for Security Tools?
 
-Here’s where it gets interesting — and a bit futuristic:
+Melinda Marks write something which makes it more interesting — and a bit futuristic:
 
 Expect CSPs to acquire security startups more often, building new protections directly into their clouds.
 
