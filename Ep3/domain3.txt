@@ -1,0 +1,29 @@
+In this segment, we’re exploring Domain 3: Network Management and Operation — the part of the AWS Advanced Networking – Specialty certification that’s all about keeping networks healthy, observable, and efficient. This domain accounts for 20 percent of the exam and focuses on practical skills you’ll use daily once your network is designed and deployed.
+
+Let’s unpack the three core tasks you’ll need to master.
+
+🔄 Task 3.1: Maintain Routing and Connectivity
+
+In real-world environments, networks aren’t static — they evolve, scale, and connect with on-premises systems. In Task 3.1, you’ll be expected to know how to maintain routing and connectivity across AWS and hybrid networks.
+
+This means you’ll need familiarity with routing protocols like BGP in the context of AWS Direct Connect or VPNs, and how AWS components such as Transit Gateway, Direct Connect gateways, and Virtual Interfaces (VIFs) help link your environments. You also need to understand how routing limits and quotas might impact design decisions and troubleshoot dynamic or static routing issues. Maintaining private access paths — for services reachable only inside your cloud — using VPC peering or AWS PrivateLink is another key skill here.
+
+In short, this task tests your ability to ensure that data keeps flowing where it needs to go — from on-premises data centers to cloud services, between regions, and across VPCs.
+
+📊 Task 3.2: Monitor and Analyze Network Traffic
+
+Once your network is running, the next big challenge is visibility — knowing what’s happening on your wires and interfaces.
+
+Task 3.2 revolves around monitoring and analyzing network traffic. Here, AWS’s observational tools become your best friends. You’ll need to interpret metrics and logs from sources like Amazon CloudWatch, VPC Flow Logs, and VPC Traffic Mirroring to understand connectivity patterns, spot anomalies, and trace performance bottlenecks. You may also use advanced tools like Reachability Analyzer and Transit Gateway Network Manager to visually map topology and validate that your routes and configurations meet intent.
+
+Troubleshooting is a core part of this: whether it’s packet size mismatches, unexpected latency, or routing loops, this task measures how well you detect issues and use AWS visibility tools to diagnose them.
+
+📈 Task 3.3: Optimize Networks for Performance, Reliability, and Cost
+
+Finally, Task 3.3 pushes you into optimization. Operational excellence isn’t just about fixing problems — it’s about continually improving the network for performance, resilience, and cost-efficiency.
+
+You’ll need to understand when to use VPC peering versus Transit Gateway, how to reduce bandwidth usage with efficient traffic patterns like unicast or content caching, and which kinds of network interfaces — such as Elastic Network Adapter (ENA) or Elastic Fabric Adapter (EFA) — are best suited for high throughput workloads. Configuration choices around Route 53 DNS load balancing, subnet sizing, and even jumbo frames can affect both cost and performance.
+
+Optimization also ties back into monitoring: the better you understand traffic patterns and performance metrics, the more intelligently you can refine your architecture to meet SLAs and control AWS expenses.
+
+In summary, Domain 3 is where design meets operation. It tests your ability to maintain connectivity, see into your network’s behavior using AWS tools, and make informed decisions that boost performance and reduce costs. Master these skills, and you’ll not only ace this part of the certification but also become deeply effective at real-world cloud networking operations.

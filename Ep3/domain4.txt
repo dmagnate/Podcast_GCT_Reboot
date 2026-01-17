@@ -1,0 +1,53 @@
+In this episode, we’re exploring Domain 4: Network Security, Compliance, and Governance — the section of the AWS Advanced Networking – Specialty exam that tests how you protect, monitor, audit, and govern your networks on AWS and in hybrid environments. This domain makes up about 24 percent of the exam, and it’s all about security fundamentals • real-world controls • and compliance visibility.
+
+Let’s step through the three core tasks you’ll need to understand.
+
+🔐 Task 4.1 — Implement & Maintain Network Security Features
+
+First up is Task 4.1: Implement and maintain network features to meet security and compliance needs and requirements. This section tests both your theoretical understanding and practical skills in designing secure network architectures. You’ll need to know how to:
+
+Identify different threat models based on the application’s architecture — meaning, think in terms of what can go wrong and where potential attackers might try to get in.
+
+Recognize common security threats and how they manifest in network traffic.
+
+From there, AWS expects you to apply controls to protect network traffic flows. This includes:
+
+Securing inbound traffic — using services like AWS WAF, AWS Shield, and AWS Network Firewall to protect apps exposed to the internet.
+
+Securing outbound traffic as it leaves AWS — with firewalls, proxies, and Gateway Load Balancers to filter and inspect egress connections.
+
+Layer-internal traffic segmentation and restriction — using security groups, network ACLs, and VPC endpoint policies to control communication between VPCs or across accounts.
+
+You’ll also design architectures that meet compliance needs — like isolating untrusted networks, creating perimeter VPCs, or separating workloads using three-tier models — and build incident detection and alerting into the environment.
+
+🔍 Task 4.2 — Validate & Audit Security Using Monitoring and Logging
+
+Once your protections are in place, the next challenge is verification and auditing — and that’s where Task 4.2 comes in.
+
+Here, you’ll work with AWS visibility services such as:
+
+Amazon CloudWatch for alarms and metrics.
+
+AWS CloudTrail for tracking API activity.
+
+VPC Flow Logs and VPC Traffic Mirroring for network traffic visibility.
+
+Transit Gateway Network Manager for multi-VPC and hybrid traffic analysis.
+
+You’ll need methods to create these logs, deliver them reliably (for example, through Kinesis Firehose or CloudWatch Logs), and analyze them to spot anomalies or compliance violations. You’ll also set up automated alarms and custom metrics, correlate data from multiple sources, and audit network configurations at scale — using tools like AWS Firewall Manager, Trusted Advisor, and security group reviews.
+
+🔐 Task 4.3 — Protect Confidentiality of Data & Communications
+
+Finally, Task 4.3 zeroes in on confidentiality — encrypting data and protecting communications both in transit and across hybrid links.
+
+Key areas include:
+
+Choosing the right network encryption options in AWS — whether using IPsec for VPNs, TLS for app traffic, or encryption across Direct Connect.
+
+Understanding the AWS shared responsibility model and how in-flight encryption fits into it.
+
+Securing DNS communications, including methods like DNSSEC to protect domain name resolution.
+
+You’ll also work with certificate management solutions — for example AWS Certificate Manager (ACM) and ACM Private CA — to handle certificates and keys without exposing sensitive material.
+
+In summary, Domain 4 brings network security front-and-center: from designing secure traffic flows, to capturing and analyzing telemetry, to encrypting communications. Mastery here means your networking architecture isn’t just functional — it’s secure, compliant, and auditable.
