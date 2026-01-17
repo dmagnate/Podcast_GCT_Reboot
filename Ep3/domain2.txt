@@ -1,0 +1,29 @@
+Today we’re exploring Domain 2: Network Implementation from the AWS Certified Advanced Networking – Specialty exam — the part that focuses on hands-on building and configuring real-world network solutions on AWS. This domain makes up roughly 26 percent of the exam, and tests not just theory, but practical implementation skills you’d use in the field.
+
+🔗 Task 2.1: Hybrid Routing and Connectivity
+
+First up, Task 2.1 — implementing routing and connectivity between on-premises networks and the AWS Cloud. Here, you need to know how to choose and configure protocols — like static and dynamic routing — to ensure traffic flows correctly between environments. You’ll also work with VPNs (standard and accelerated), physical connectivity options like AWS Direct Connect, and networking fundamentals like Layer-2 and Layer-3 constructs such as VLANs, IP addressing, gateways, switching, and routing.
+
+This task also tests your ability to integrate traffic management tools like Transit Gateway Connect for SD-WAN, configure DNS resolution across environments, set up load balancing solutions, and validate your setup by testing connectivity with tools like Route Analyzer or Reachability Analyzer. Monitoring and logging are part of the picture too — ensuring you can observe traffic behavior after deployment.
+
+🌐 Task 2.2: Multi-Account and Multi-Region Connectivity
+
+Next is Task 2.2 — expanding that connectivity across multiple AWS accounts, Regions, and VPCs. In real enterprise environments you often need to connect networks that span accounts or regions, and AWS offers multiple patterns and services to do that.
+
+For instance, you might choose VPC peering, rely on Transit Gateway as a central hub for multi-VPC communication, or implement VPNs with third-party SD-WAN appliances. You’ll also use AWS mechanisms like Resource Access Manager (RAM) to share network resources across accounts.
+
+This task will test your ability to configure hub-and-spoke architectures, manage inter-VPC routing, and ensure service-to-service connectivity — including how DNS resolution works across that hybrid mesh. Security plays a role here too, with security groups, NACLs, and firewall services helping protect boundaries between network segments.
+
+🔍 Task 2.3: Advanced DNS Architectures
+
+Then there’s Task 2.3, which tackles complex hybrid and multi-account DNS setups. Here you must know when to use public vs. private hosted zones, how to implement conditional forwarding, and how to configure alias, A/AAAA, TXT, and pointer records to support hybrid applications.
+
+You’ll also deal with DNS delegation, DNSSEC for added security, and how to share DNS services between accounts using RAM. A big part of this skill set is practical implementation: configuring DNS zones, adjusting traffic management policies based on latency or geography, and monitoring DNS behavior — especially as hybrid environments grow in scale.
+
+🤖 Task 2.4: Automate and Configure Network Infrastructure
+
+Finally, Task 2.4 moves into network automation and infrastructure configuration — increasingly important as networks become more complex. You’ll use Infrastructure as Code (IaC) tools like AWS CloudFormation, the AWS Cloud Development Kit (CDK), and the AWS CLI or SDKs to consistently provision and manage networking resources.
+
+Beyond static templates, AWS also expects you to understand event-driven automation, how to eliminate risky hard-coded values in templates, and how to reduce human error through repeatable, automated workflows. The goal? Efficient, low-cost network deployments that you can safely scale.
+
+In summary, Domain 2 pushes you from planning into actual implementation — everything from hybrid routing and multi-VPC connectivity to advanced DNS and automated provisioning. Mastery here demonstrates real-world capability to not just design, but actually build and maintain sophisticated AWS network architectures.

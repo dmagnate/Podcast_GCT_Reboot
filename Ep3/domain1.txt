@@ -1,0 +1,31 @@
+https://docs.aws.amazon.com/aws-certification/latest/examguides/advanced-networking-specialty-01.html
+
+Today we’re breaking down Domain 1 — Network Design from the AWS Certified Advanced Networking – Specialty exam guide. This domain makes up 30 percent of the exam content and tests your ability to architect scalable, reliable, and secure network solutions on AWS and in hybrid environments.
+
+Let’s walk through the six major tasks you’ll need to master.
+
+🔥 Task 1.1: Edge Network Services for Global Performance
+
+First, you’ll need to know how to design solutions that optimize performance for global users. That means selecting and integrating edge services like Amazon CloudFront — AWS’s content distribution network — and AWS Global Accelerator, which routes users over the AWS global network for lower latency. You’ll assess traffic patterns, choose the right services, and integrate them with load balancers or API gateways to ensure fast and reliable access from anywhere in the world.
+
+🧭 Task 1.2: DNS Design Across Environments
+
+DNS might seem simple, but in advanced architectures it gets complex fast. In this task, you’ll design DNS solutions for public, private, and hybrid networks using Amazon Route 53. That includes public hosted zones for internet-facing names, private hosted zones for VPC-internal resolution, hybrid DNS using Route 53 Resolver, and multi-Region or multi-account scenarios. You also need to understand DNS fundamentals like record types, TTL, and health checks.
+
+⚖️ Task 1.3: Load Balancing for High Availability
+
+Traffic needs to flow smoothly — and securely — through your architecture. Task 1.3 focuses on designing load balancing solutions that meet availability, scalability, and security requirements. You’ll explore load balancing across different OSI layers, understand the strengths of the various Elastic Load Balancers (classic, application, network), and integrate them with services like Global Accelerator, CloudFront, WAF, and Kubernetes clusters. Beyond choosing the right balancer, you’ll think about advanced options like session affinity, TLS termination, and cross-zone balancing.
+
+👀 Task 1.4: Logging and Monitoring Across Networks
+
+Visibility is critical. In this task, you’ll define logging and monitoring requirements that give you insight into network performance and security. AWS tools like CloudWatch metrics, logs, dashboards, and alarms provide the core visibility layer. You’ll also consider VPC Flow Logs, traffic mirroring, Transit Gateway Network Manager, and specialized tools like Reachability Analyzer to make sure you can monitor both AWS and hybrid network links effectively.
+
+🌐 Task 1.5: Routing and Hybrid Connectivity
+
+Many real-world architectures require connectivity between on-premises data centers and the AWS Cloud. This task tests your understanding of routing strategies and connectivity architectures — including static vs. dynamic routing, BGP fundamentals, physical interconnect concepts like VLANs and LAGs, and encryption technologies such as IPsec and GRE. You’ll design hybrid topologies that might combine AWS Direct Connect for high throughput with Site-to-Site VPN for redundancy.
+
+🔗 Task 1.6: Multi-Account, Multi-Region Networking
+
+Finally, you’ll tackle multi-account and multi-Region architectures. You need to know when to use VPC Peering, Transit Gateway, PrivateLink, and VPC sharing to connect distributed environments. IP address planning — especially handling overlaps — is key here, and you’ll choose appropriate connectivity patterns based on compliance, performance, and operational requirements.
+
+In summary, Domain 1 tests your ability to think like an architect: designing high-performing, resilient networks that span the globe, integrate with edge and core services, and connect securely with on-premises infrastructure. Whether you’re preparing for the certification or refining real-world cloud networking skills, mastering these concepts is essential for success in advanced networking roles on AWS.
