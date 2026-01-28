@@ -1,4 +1,4 @@
-https://www.darkreading.com/cloud-security/voidlink-malware-advanced-threat-linux-systems
+                                                                                                                       https://www.darkreading.com/cloud-security/voidlink-malware-advanced-threat-linux-systems
 
 
 Today we’re diving into a new and concerning cybersecurity development: a highly advanced malware framework called VoidLink — one that specifically targets Linux environments and cloud-native infrastructure. This threat was recently uncovered by researchers at Check Point, and its sophistication marks a potential shift in how attackers approach cloud compromise.
@@ -16,3 +16,9 @@ Importantly, so far there’s no public evidence of VoidLink being used in activ
 Researchers are also investigating where VoidLink came from. Artifacts and language elements within the code point toward a Chinese-affiliated development environment, though the exact authorship and intent — whether for cyber-crime, espionage, or as a commercial penetration-testing tool — remain unclear.
 
 So, what should defenders do? Experts recommend raising your cloud security posture: tighten access controls, implement advanced endpoint detection specialized for Linux, monitor for unusual behavior across your cloud instances, and look out for the indicators of compromise being shared by threat researchers. As cloud adoption continues to grow, threats like VoidLink are a reminder that defenders must think like attackers — always on the lookout for new vectors and stealthy intrusions.
+
+
+ 
+As per checkpoint research quoting from their article, "VoidLink’s architecture is extremely flexible and highly modular. To best manage an attack, VoidLink ships with a web-based dashboard that provides the operator with complete control over the running agents, implants, and plugins. The most interesting component of the dashboard is the plugin management panel. It allows the operator to deploy selected modules to victims and to upload custom modules. 
+
+VoidLink is a cloud-first Linux implant. Once a machine is infected, it surveys the compromised system and can detect which cloud provider the infected machine is running under. Currently, VoidLink can detect AWS, GCP, Azure, Alibaba, and Tencent, with plans to add detections for Huawei, DigitalOcean, and Vultr. For all these cloud providers, VoidLink queries additional information on instance metadata using the respective vendor’s API."
