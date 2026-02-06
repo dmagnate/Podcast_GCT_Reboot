@@ -88,3 +88,154 @@ Internet Gateway = big front door to the world.
 NAT Gateway = private back door access.
 
 Networking can seem like wizardry at first, but once you break it down into pieces — it’s really just controlling how data moves from point A to point B.
+
+⚖️ Load Balancers — The Traffic Managers You Can’t Live Without
+
+Alright, now that we’ve talked about public and private subnets, this is the perfect time to talk about load balancers — because let’s be honest, running one lonely EC2 instance in production is basically asking for trouble. 😅
+
+A load balancer does exactly what it sounds like: it takes incoming traffic and spreads it across multiple targets — like EC2 instances, containers, or even IP addresses — so no single thing gets overwhelmed.
+
+Think of it like a very calm traffic cop at a busy intersection, redirecting cars so nobody crashes into each other.
+
+In AWS, load balancers are part of a service called Elastic Load Balancing, or ELB — and there are three main types you’ll see in the wild.
+
+🌐 Application Load Balancer (ALB)
+
+Let’s start with the most popular one these days: the Application Load Balancer, or ALB.
+
+ALBs operate at Layer 7 of the OSI model — which basically means they understand HTTP and HTTPS traffic. They’re smart. Like… annoyingly smart in a good way.
+
+With an ALB, you can do things like:
+
+Route traffic based on URL paths
+/api goes here, /login goes there
+
+Route based on hostnames
+app.example.com vs admin.example.com
+
+Support modern architectures like microservices and containers
+
+This is why ALBs are the default choice for:
+
+Web apps
+
+REST APIs
+
+Container-based workloads like ECS and EKS
+
+From a networking point of view, ALBs usually sit in public subnets and forward traffic to targets living in private subnets — which is exactly how you keep your app exposed but your servers hidden. 🔐
+
+⚡ Network Load Balancer (NLB)
+
+Next up: the Network Load Balancer, or NLB.
+
+This one operates at Layer 4, meaning it doesn’t care about URLs or headers — it just sees IP addresses and ports. Super fast. Very efficient. No small talk. 🏎️
+
+NLBs are great when you need:
+
+Ultra-low latency
+
+High throughput
+
+Static IP addresses
+
+TCP, UDP, or TLS traffic
+
+You’ll often see NLBs used for:
+
+Databases
+
+Real-time systems
+
+Legacy applications
+
+Or anything where speed matters more than fancy routing
+
+Networking-wise, NLBs can also sit in public subnets or be internal-only, depending on your use case.
+
+🏛️ Classic Load Balancer (CLB)
+
+And then there’s the Classic Load Balancer…
+
+Let’s just say this politely:
+It still exists.
+AWS still supports it.
+But you probably shouldn’t start anything new with it. 😬
+
+CLBs were the original load balancers before ALB and NLB existed. They can operate at both Layer 4 and Layer 7, but they’re missing a lot of modern features.
+
+If you see one in production, it’s usually because:
+
+The app is old
+
+Nobody wants to touch it
+
+Or it’s been running since the dawn of AWS time
+
+For new workloads? ALB or NLB all the way.
+
+🧠 Where Load Balancers Fit in Your VPC
+
+Now here’s where everything ties together.
+
+A typical AWS networking setup looks something like this:
+
+Internet Gateway attached to the VPC
+
+Public subnets containing:
+
+Load balancers
+
+NAT Gateways
+
+Private subnets containing:
+
+EC2 instances
+
+Containers
+
+Databases
+
+Traffic flow looks like this:
+
+User hits the load balancer from the internet
+
+Load balancer forwards traffic to private instances
+
+Instances respond back through the load balancer
+
+Private instances use NAT Gateway for outbound internet access
+
+So the load balancer becomes your front desk, your shield, and your traffic manager — all in one.
+
+🩺 Health Checks — Because Trust Issues Are Healthy
+
+One more thing load balancers do really well: health checks.
+
+AWS load balancers constantly ask your targets:
+
+“Hey, you good?”
+
+If an instance doesn’t respond correctly, the load balancer stops sending traffic to it automatically.
+
+No alerts required.
+No panic.
+No midnight SSH sessions.
+
+This is one of those features you don’t appreciate until the day it saves your app from a full outage. 🙌
+
+🔁 Quick Recap — Networking + Load Balancers Together
+
+Let’s quickly zoom out and connect the dots:
+
+VPC — your private network in AWS
+
+Subnets — public and private slices of that network
+
+Route tables — tell traffic where to go
+
+Internet Gateway — inbound and outbound internet access
+
+NAT Gateway — outbound-only internet for private subnets
+
+Load Balancers — safely expose your app and spread traffic
