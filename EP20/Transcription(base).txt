@@ -1,0 +1,316 @@
+0.000000	5.920000	 Hey everyone, welcome to another episode and this week we will be covering our AWS
+5.920000	12.000000	 ENS certification syllabus walkthrough. Now, I really wanted to bring some security
+12.000000	18.320000	 news to you guys around cloud security, but well, to be honest, it was one of those weeks where
+18.320000	23.840000	 I wasn't able to find any content worth sharing. Of course, there are a lot of security incidents
+23.840000	29.440000	 around different parts of infrastructure, but anything covering cloud or cloud security,
+29.440000	35.680000	 I was not able to find. So I thought maybe today's episode will be just wrapping up our AWS
+35.680000	41.120000	 ENS certification syllabus walkthrough. One more thing which I did last week was to book my
+41.120000	47.680000	 certification exam as well. I booked it for me first week. Now, if you want to continue this journey
+47.680000	54.320000	 along with me now, then it's worth booking for yourself as well. I mean, for me, it was 50%
+54.320000	61.680000	 of because I was already AWS certified in security specialty last year. If you have done similar
+61.680000	67.360000	 certification from AWS, then it will be 50% discounted price for you as well. So it costed me
+67.360000	74.880000	 around 150 USDs and you can easily calculate how much it will cost in your local currency as well.
+74.880000	79.600000	 But anyhow, I have booked the examinations. So sort of it will give me a target date now,
+79.600000	86.640000	 which is me first week before which we have to wrap up all the course content. That's why I thought
+86.640000	92.000000	 even if we don't have any like cloud security news what's sharing this week, maybe I should come
+92.000000	98.800000	 again before my regular by weekly episode. So I'm coming back this Sunday as well to record with you
+98.800000	106.960000	 guys the AWS labours walkthrough of ENS certification. So this will help us in in kickstarting our content
+106.960000	112.800000	 of the certification course and one of the topic which I feel which should be really good to start with
+112.800000	119.360000	 will be VPC basics. So if you want to check out like VPC basics, then of course don't forget to
+119.360000	125.200000	 listen to the next episode. But of course this episode is also worth listening as well because I am
+125.200000	131.280000	 covering all the domain wise pending topics for domain two, three and four domain one. We have
+131.280000	136.880000	 covered last week as well. So I won't be covering that again, but I thought maybe I will just give you
+136.880000	142.320000	 at least the task statements as in just the title of domain one as well just to revise you guys. So after
+142.320000	148.240000	 the short break, I will be covering domain one task statements, just titles and then we'll be going
+148.240000	155.120000	 through domain two, three and four. All right, welcome back. So we will be starting our labours walkthrough
+155.120000	163.280000	 of AWS ENS certification and like I mentioned, I will be covering domain one titles only. So domain
+163.280000	171.360000	 one was network design and it covers up to 30% of the examination questions. What it will test us,
+171.360000	178.400000	 it will test us around edge network services for global performance, DNS design across environments,
+178.400000	184.480000	 load balancing for high availability, logging and monitoring across networks, routing and hybrid
+184.480000	191.840000	 connectivity and multi account multi vision networking. So these six task statement will be covered as
+191.840000	196.800000	 part of domain one. I covered the details of each task statement in last week episodes. So if you
+196.800000	202.480000	 haven't checked that out yet, then of course it's worth checking that as well. Now let's continue with
+202.480000	211.280000	 domain two. Now domain two is network implementation. So in this, the focus is on hands-on building and
+211.280000	218.640000	 configuring real world network solutions on AWS. This domain makes up roughly 26% of the exam
+218.640000	225.520000	 and it tests not just theory, but you can understand from the domain name itself. It also tests our
+225.520000	231.440000	 practical implementation skills, which we will be using in the field. So it's not only about the
+231.440000	237.600000	 concepts. We have to really know how to implement those concepts in the production or even develop
+237.600000	242.560000	 an environment. I mean, because this is an examination. So of course, you are not expected to really work
+242.560000	247.760000	 in production environment. So even if we are able to perform some of the task statements in the lab,
+247.760000	253.520000	 if we are able to like test few scenarios, then it's worth mentioning here. Now first up,
+253.520000	260.320000	 the task is 2.1, which is hybrid routing and connectivity. In this task, we will be implementing
+260.320000	266.880000	 routing and connectivity between on-premise network and AWS cloud. I think I covered it in one of
+266.880000	272.400000	 the topic of task statement one as well. But as the name implement, this is more towards not the
+272.400000	278.240000	 concept, but practical side of things. So they want us to understand and implement more on how we can
+278.240000	284.160000	 establish routing and connectivity between on-premises networks and AWS cloud. Now what we need to know
+284.160000	290.080000	 here is how to choose and configure different protocols like if you want to use static and dynamic
+290.080000	295.840000	 routing, because what we want to ensure is traffic flows correctly between environments. I mentioned
+295.840000	302.160000	 last time as well, a multi-cloud multi-region scenario is kind of give us the best of all the worlds.
+302.160000	307.200000	 And there is no point of setting up multi-region multi-cloud if you don't and show that there is
+307.200000	312.880000	 connectivity across those two different locations or those two different types of infrastructure as well.
+312.880000	318.800000	 Now in this, we will also work with VPNs, which are virtual private networks across the two sites.
+318.800000	324.800000	 And it also includes physical connection. AWS does provide a physical connectivity option as well
+324.800000	329.840000	 using AWS direct connect or you can have some VPNs which are running on the internet,
+329.840000	335.760000	 so site to site VPNs. We have to understand networking fundamentals like layer two, layer three constructs
+335.760000	342.560000	 such as VLANs IP addressing gateway switching and routing. Now, VLANs are not necessarily a concept
+342.560000	347.520000	 onto the cloud, but we should be having some level of understanding because if you are connecting your
+347.520000	352.640000	 cloud infrastructure to on-prem, then on-prem actually deals with VLANs, layer two switching,
+352.640000	356.800000	 bridging and everything. So we have to understand from on-prem perspective as well.
+356.800000	363.200000	 I'm not sure this topic will be going in detail on the on-prem networking side of concepts,
+363.200000	368.000000	 but it's worth understanding them as well because if they are mentioning it in the exam,
+368.000000	372.720000	 so maybe it will come like a scenario where you have to understand a bit of everything.
+372.720000	379.360000	 Now this topic also tests our ability to integrate traffic management tools like transit gateways,
+379.360000	386.240000	 specially for SDVAN type of solution or scenarios, configure DNS resolution across the environment,
+386.240000	392.000000	 we can also set up load balancing solutions and we have to validate our setup by testing connectivity
+392.000000	397.120000	 with tools like route analyzer and reachability analyzer. Monitoring and logging is of course part
+397.120000	403.440000	 of feature as well, so we have to ensure that we can observe what traffic is flowing from in and out.
+403.440000	408.480000	 It will not only help us in troubleshooting if there is some sort of connectivity loss or if you
+408.480000	414.480000	 want to create a sort of like a high availability sort of networking, but it will also help us
+414.480000	419.760000	 from the security perspective as well. If there is a malicious traffic flowing onto a network,
+419.760000	425.920000	 we should be able to inspect the traffic and monitor the logs for any sort of abnormality.
+425.920000	434.080000	 So this is our statement 2.1. In 2.2, we will be having again multi-account and multi-region connectivity,
+434.080000	440.480000	 which is about expanding the connectivity across multiple AWS accounts, reasons and VPCs.
+440.480000	446.320000	 Now in real enterprise environment, this is quite often that we have to span our network across
+446.320000	451.840000	 the accounts or reason and of course AWS provide a lot of different patterns, solutions and services
+451.840000	457.280000	 to implement that. For example, we can choose VPC peering, we can rely on transit gateway as a central
+457.280000	463.920000	 hub for multi-VPC communication, we can implement VPNs as well and of course Cloudwind, which is a big
+463.920000	471.360000	 multi-transit gateways across the reason managed by AWS solution. It's kind of like the biggest
+471.360000	476.880000	 elephant which can control everything like what's going in and out into your network. We can also
+476.880000	483.920000	 use AWS mechanisms for sharing the resources using resource access manager to share network resources
+483.920000	489.760000	 across the accounts. So this task will test our ability to configure hub spoke architecture,
+489.760000	496.880000	 managing intervpc routing and show service connectivity and it will include how DNS resolution
+496.880000	502.240000	 works across the hybrid mesh. So it's not only the DNS resolution between two sides.
+502.240000	508.160000	 Now it's part of like this hybrid mesh infrastructure. And again, security plays a role here too
+508.160000	513.600000	 because we don't want to miss security at any course. So we'll be covering concepts like security
+513.600000	519.120000	 groups, knuckles, firewalls, which help us protect boundaries between network segments.
+519.120000	525.600000	 Now task statement 2.3 is around advanced DNS architecture. In this task, we will be tackling
+525.600000	531.600000	 complex hybrid and multi-account DNS setups. So we must know when to use a public and private
+531.600000	539.440000	 hosted zones because AWS provides both kind of DNSs. One of the DNS when we tag it as public zone
+539.440000	545.360000	 will be then having accessibility or reachability from the public network while we can also set up
+545.360000	551.840000	 a private zone root 53, which will be only used by VPCs which are in your private network. So those
+551.840000	556.400000	 won't be reachable from outside network. And again, it depends on your use case. So if your application
+556.400000	561.360000	 is not public facing like you don't want your application to reach from outside the network.
+561.360000	565.520000	 Of course, there is no point of using this, right? So that's why we have like these different
+565.520000	570.720000	 type of public and private hosted zones. We have to know how and when to implement conditional
+570.720000	577.680000	 forwarding, how and when to configure aliases, e-recodes, TXT records, pointer records to support
+577.680000	584.080000	 hybrid application. We also have to do with DNS delegation for adip security and how to share
+584.080000	591.600000	 DNS services between the accounts using RAM. The big part of this skill set is practical implementation
+591.600000	596.800000	 because configuring DNS zones and adjusting the traffic policies based on latency and
+596.800000	602.560000	 osuography and monitoring the DNS behavior. Everything is really important not only from
+602.560000	609.120000	 scalability of your network, but also from the perspective of security. So we have to cover some
+609.120000	613.600000	 of the pillars here. We have to make sure operational excellence. So we have to make sure that
+613.600000	620.320000	 operationally our DNSs are always in there for for application to use. We also have to make
+620.320000	625.760000	 sure they are scalable. We have to make sure that they are secure as well. So all the well-architected
+625.760000	631.680000	 framework, which we have discussed multiple times in our previously discussion. We had for AWS
+631.680000	636.640000	 security specialty. You can go and check out those episodes as well. I covered well-architected
+636.640000	642.880000	 framework pretty well before we unfortunately have to switch off our AWS security specialty
+642.880000	648.400000	 examination because adbless doesn't like it that I am sharing the knowledge with you guys
+648.400000	653.120000	 free of course. So maybe they have discontinued because they listen to my podcast as well.
+653.120000	658.000000	 I'm not sure. But yes, you can check those episodes to understand well-architected framework.
+658.000000	664.080000	 Now in task statement 2.4, we will be covering automate and configure network infrastructure,
+664.080000	669.760000	 which moves into network automation and infrastructure configuration. Now networking automation
+669.760000	675.680000	 and infrastructure configuration. I think those automation are really scary words if someone who is
+675.680000	679.920000	 just now starting onto the cloud trying to understand the networking concept suddenly have to do
+679.920000	685.280000	 with automation as well is like, wait, I don't even know how to do it manually man. Why you are teaching
+685.280000	692.000000	 me how to automate this stuff? First, I have to know how to how I can do it with my own hands in manual
+692.000000	698.880000	 and older way. But again, because this certification actually really target that concept, we have to
+698.880000	704.320000	 understand it. And I'm sure because it's about AWS only. So they might be using just cloud
+704.320000	710.880000	 formation and other IAC tools, not terraforms show because terraform is kind of like a multi vendor
+710.880000	715.840000	 which is not AWS specific. So they won't be covering terraform in this certification exam.
+715.840000	721.200000	 But let's check out in the details. So they do want us to use infrastructure as code. And yes,
+721.200000	728.960000	 they are covering tools like AWS cloud formation, AWS cloud development kits, CDK, CLIs or SDKs to
+728.960000	736.000000	 consistently provision and manage our networking resources. Now, I to be honest is really in favor of
+736.000000	743.600000	 it because I am working in similar sort of setup. I have worked in past as well where scalability is
+743.600000	750.800000	 really really big concern if you are using manual ways of deployment. So if you really want your
+750.800000	756.080000	 your infrastructure to scale. So it's not about only about like saving your time in terms of initial
+756.080000	761.360000	 configuration. If you want to continuously add more resources into your infrastructure, then of
+761.360000	767.040000	 course automation and in freezer code helps a lot. So it's good that they are covering this aspect
+767.040000	774.720000	 as part of the domain wise test as well. Now beyond these static templates of configure infrastructure,
+774.720000	781.440000	 AWS is also expecting us to understand event driven automation. So how to how to eliminate risky
+781.440000	787.280000	 hard coded values in templates, how to reduce human error through repeatable automated workflows,
+787.280000	792.880000	 and what they want us to achieve. They want us to make sure that we are creating a efficient
+792.880000	798.880000	 local network deployments that we can safely scale to higher limits. Now, in summary, I feel that
+798.880000	806.400000	 domain two will really push our domain once knowledge from planning to actual implementation.
+806.400000	812.640000	 And everything from hybrid cloud and multi VPC connectivity to advance DNS automated provisioning,
+812.640000	819.360000	 it will really demonstrate like our real world capability to not just design, but actually build
+819.360000	825.280000	 and maintain the sophisticated AWS network architecture. I hope you guys are clear with domain one
+825.280000	830.800000	 and domain two. If you guys have any questions around that, then of course let me know in the comments
+830.800000	837.520000	 and then I'll be try to find more information onto that. Maybe something bits sometime I miss myself.
+837.520000	841.920000	 So if you feel like something is missing or something need to be explained in better way,
+841.920000	847.360000	 then just let me know and I'll try to grab more resources around that. But anyways, let's switch to
+847.360000	852.880000	 domain three now, which is network management and operation. Now you see the trajectory here.
+852.880000	860.480000	 They wanted us to plan first or design first in domain one. They wanted us to implement in domain two.
+860.800000	866.400000	 Like how we can do this stuff hands on and around end of domain two, they mentioned a bit
+866.400000	873.040000	 about automation. Domain three is now building more into domain two, which is around management and
+873.040000	878.880000	 orchestration as well as operation. So this is why I like the content of this compared to AWS
+878.880000	885.600000	 security specialty because each domain, its task statement is nicely fitting one on top of another.
+885.600000	891.200000	 So it's not like domain two have some topics, which are prerequisite or which gave you a building
+891.200000	897.920000	 block of domain one or domain two. So as part of domain three, what we want is we want to make sure that
+897.920000	905.840000	 our networking is healthy, available and efficient. So this domain accounts for 20% of the exam. And
+905.840000	911.600000	 again, focus is on practical skills. We will be using daily once your network is designed and
+911.600000	918.000000	 deployed. So domain one, designing domain two deployment domain three patients, so in task statement
+918.000000	924.640000	 three dot one manage routing and connectivity in real world environments when we have like static
+924.640000	931.120000	 networks, they easily evolve scale and connect with on premise environment again, multi cloud,
+931.120000	936.080000	 multi regions. I keep on saying this statement again and again, in task statement three dot one,
+936.080000	943.440000	 we will be expected to know how to maintain routing and connectivity across AWS hybrid networks.
+943.440000	949.760000	 This mean you will need to be familiar with routing protocols and like in the context of AWS
+949.760000	955.200000	 direct connect, we might have to understand more about VGP or VPNs, how different AWS components such
+955.200000	962.320000	 as transit gateways direct connect gateways, virtual interfaces help link our environment. We also need to
+962.320000	969.040000	 understand how routing limits and quotas might impact this sign decisions. I mean, I recall
+969.040000	975.520000	 in one of the deployment lately, we were right in the end of our code like we have written everything
+975.520000	981.840000	 for the new new deployment in one of the region only to realize that cloud man, which we use heavily
+981.840000	988.880000	 is not supported in that region. So we have to end up like scratching everything right up everything
+988.880000	995.120000	 from the perspective of another region. The limitations are around the regions where your particular
+995.120000	1001.840000	 service is supported or not or quotas. They really impact design decisions and even troubleshooting
+1001.840000	1008.080000	 the static and dynamic routing issues. Everything comes in a play maintaining private access path is
+1008.080000	1013.440000	 really important as well. So reachability and I mentioned before as well. We can use VPC reachability
+1013.440000	1020.320000	 analyzer, so we can use this quite heavily to check the connectivity and routing between the
+1020.320000	1026.720000	 different locations. Now ensure this task will test our ability to ensure that data keeps flowing
+1026.720000	1032.400000	 where it needs to go. So from point A to point B data should be reaching the package should reach
+1032.400000	1037.680000	 from one location or source from destination. That's the whole point of setting the networking right.
+1037.680000	1043.920000	 In task statement 3 or 2 we will be monitoring and analyzing network traffic. Now once our network
+1043.920000	1049.920000	 is running the biggest challenges visibility and observability knowing what's happening between
+1049.920000	1055.360000	 your interfaces or different parts. This task revolves around monitoring and analyzing network
+1055.360000	1062.960000	 graphics. So our tools provided by AWS they can really help in this concept. So we have to be familiar
+1062.960000	1069.360000	 with all those tools, which AWS provide like Amazon CloudWatch, VPC flow looks, traffic mirroring.
+1069.360000	1074.080000	 They will help us to understand the connectivity patterns. They will help us in sporting the
+1074.080000	1080.320000	 anomalies and of course we can easily identify and fix any sort of performance bottlenecks. We also
+1080.320000	1086.960000	 have to use tools like reachability analyzer, transit network gateway manager to visually map topology
+1086.960000	1092.240000	 and validate that our routing and configurations meet the intent result. The troubleshooting is
+1092.240000	1099.280000	 cold part of this. So we have to understand all those concepts around packet sizing, expected latency
+1099.280000	1105.440000	 if these are routing loop because this task measures how well we can detect the issues and we have
+1105.440000	1112.320000	 to use AWS tools to diagnose them. Task statement 3 dot T covers optimizing networks for performance
+1112.320000	1118.160000	 reliability and cost. This task statement pushes us into optimization because operational excellence
+1118.160000	1123.840000	 isn't just about fixing your problem. We have to also make sure that we continuously improve the
+1123.840000	1129.120000	 network performance, resilience and cost up essentially. So we have to understand when to use
+1129.120000	1135.840000	 VPC peering versus transit gateways because sometimes the scenario might require us to use a different
+1135.840000	1141.200000	 solution even though we have like multiple solution which can solve the same problem. We have to
+1141.200000	1147.120000	 understand when to reduce bandwidth usage by using some sort of like efficient traffic patterns and
+1147.120000	1152.720000	 we also have to understand about different sort of network interfaces as well because AWS does
+1152.720000	1158.800000	 provide again lot of services. We have to know about those services as well. Configuration choices
+1158.800000	1165.120000	 also will be covering route 53 DNS load balancing, subnet sizing, everything is covered as part
+1165.120000	1170.640000	 of this optimization concept because optimization ties back into monitoring. The better we understand
+1170.640000	1176.480000	 about traffic patterns, performance metrics, the more intelligently we can refine our architecture to
+1176.480000	1183.920000	 meet SLA's and control AWS expenses. So in summary, domain 3 is where design which we have built
+1183.920000	1190.080000	 as part of domain 2 meets our operations. We test our ability to maintain connectivity,
+1190.080000	1196.560000	 see into networks behavior using AWS tools and make informed decisions that boost performance
+1196.560000	1202.640000	 and reduce costs. Master these skills and you will not only is this part of certification but also
+1202.640000	1209.840000	 become deeply effective at the real world cloud network operations. So domain 3 is really interesting
+1209.840000	1216.960000	 because now we are covering operations part of what we have built as part of domain 2 and what you
+1216.960000	1224.480000	 have designed as part of domain 1. Now domain 4 is none other than security and governance because
+1224.480000	1230.400000	 how we can miss security and governance when we are recording a podcast in cloud security because
+1230.400000	1235.600000	 we don't want to end up doing a certification with doesn't hover around security at all. Security
+1235.600000	1241.760000	 is a key theme of our podcast and of course I want to cover a certification which also cover those
+1241.760000	1248.320000	 aspects as well. Now in domain 4, we will be exploring network security compliance and governance.
+1248.320000	1256.160000	 So in this section of AWS ANS we have to understand how we can protect monitor audit and go on the
+1256.160000	1261.440000	 networks on AWS and in hybrid environment. So we cannot leave our on-prem environment behind
+1261.440000	1267.440000	 we have to make sure that we are covered from everywhere because I mentioned in one of the scenarios
+1267.440000	1274.320000	 in last week episode where one of the site was saved but because you have east to west connectivity
+1274.320000	1279.360000	 between different sites maybe your second site is not as secure as your first one and then it will
+1279.360000	1285.280000	 lead to all sorts of attacks on the second site. So we have to understand that in hybrid environment
+1285.280000	1293.120000	 all the plugs all the gates are covered. Now in this domain it makes up around 24% of the exam
+1293.120000	1297.760000	 and we will be covering security fundamentals, cell world controls and compliance visibility.
+1297.760000	1304.480000	 Our statement 4.1 covers implementing and maintaining network security feature. So in this we have to
+1304.480000	1309.600000	 meet our networking with security and compliance requirements. So this section will test both
+1309.600000	1315.040000	 our theoretical understanding and practical skills in designing secure network infrastructure
+1315.040000	1320.640000	 and the reason I can tell you why because we have to identify the threat models based on
+1320.640000	1327.520000	 applications architecture. So think in terms of what can go wrong or from where potentially your
+1327.520000	1332.880000	 attackers can try to get into your environment. So if you are working as a network architect
+1332.880000	1337.840000	 doesn't mean that you don't care about how your application is using that network because ultimately
+1337.840000	1343.440000	 network is there to serve an application right. So we have to recognize common security threats
+1343.440000	1351.040000	 and how they can manifest and change or affect our network traffic. From there AWS does expect us
+1351.040000	1355.920000	 to apply the controls to protect the network traffic flow as well. So this will include we have to
+1355.920000	1362.960000	 secure inbound traffic using AWS WAF, AWS Shield or maybe AWS network firewall as well. So this will
+1362.960000	1368.720000	 help us in protecting the apps which are apps post to the internet. We also have to make sure our
+1368.720000	1374.560000	 outbound traffic is secure as well because I have seen a lot that people don't usually care about
+1374.560000	1380.240000	 the outbound traffic. All they care about it what's coming inside the network from outside but they
+1380.240000	1384.640000	 don't care like what's leaving from your network to outside because anything which leaves from your
+1384.640000	1390.480000	 network to outside may cover some sensitive information as well. So we have to apply all sort of
+1390.480000	1396.320000	 firewalls, proxies, gateway load balancer to filter and inspect egress connections as well.
+1396.320000	1401.680000	 Layer level internal traffic segmentation and restriction with security groups, knuckles and
+1401.680000	1408.400000	 VPC endpoint policies can give another layer of defense in depth. We also need to design architecture
+1408.400000	1414.800000	 that meets compliance needs like we have to create isolated untrusted network, create parameter VPCs
+1414.800000	1420.880000	 or separating workloads using three time model and build incident detection and alerting into the
+1420.880000	1427.920000	 environment. Task statement 422 is around validate and audit security using monitoring and logging.
+1427.920000	1432.720000	 So once our protections are in place, the next challenge is verification and auditing
+1432.720000	1439.120000	 that's where this task comes in. So we will here look into various AWS visibility services like
+1439.120000	1445.120000	 CloudWatch, Outrail, Prologues, Traffic Mirroring because all these tools help us in
+1445.120000	1452.480000	 extending our observability arms so we can check alarms and metrics, we can track API activities,
+1452.480000	1458.320000	 we can even have network traffic visibility. We also need to understand that network creates a lot
+1458.320000	1465.280000	 of logs. So how we can deliver these logs reliably to maybe a centralized location or maybe our scene
+1465.280000	1471.120000	 using kinesis, firehose or CloudWatch logs, how we can analyze them to spot anomalies and
+1471.120000	1477.040000	 compliance violations, we may need to set up automated alarms and custom metrics as well,
+1477.040000	1482.560000	 how we can correlate data from multiple sources, network configurations at scales using
+1482.560000	1489.680000	 AWS trusted advisors, your degree reviews, etc. This task statement 422 is more about auditing what
+1489.680000	1495.680000	 you have built so far. In task statement 423 which also happened to be our last task statement for
+1495.680000	1502.320000	 this course is protecting confidentiality of data and communication. So in this we will be covering
+1502.320000	1508.560000	 on confidentiality which covers encrypting data and protecting communication both in transit and
+1508.560000	1514.480000	 across hybrid links. So key areas are like you have to increase the right network encryption as well
+1514.480000	1519.600000	 because it's not about securing your data when it's on rest, we have to also secure the data when
+1519.600000	1526.480000	 it's in transit. So for example, we can use IPsec for VPNs, we can use TLS for app traffic or maybe
+1526.480000	1532.720000	 for your S3 buckets as well, understanding the AWS shared responsibility model and how in flight
+1532.720000	1538.720000	 encryption fits all into this. We also have to make sure that our DNS communication is secure so
+1538.720000	1545.520000	 we can use DNSsec which help in protecting domain name resolution. Of course AWS does provide some
+1546.160000	1552.640000	 certificates as well. So services like AWS certification manager or private CA can help in
+1552.640000	1558.800000	 generating the certificates and keys without exposing the sensitive material. So in domain 4,
+1558.800000	1563.840000	 we will be covering network security front and center from designing secure traffic flows,
+1563.840000	1570.080000	 capturing the telemetry and cryptic communication from the point of view of a security architect
+1570.080000	1576.400000	 because it's not about only mastering the network architect but we have to also make sure that it's
+1576.400000	1582.160000	 secure, compliant and auditable. Now from the main one to domain 4, it's all nicely stacked.
+1582.160000	1586.640000	 First we designed the infrastructure, then we built. Once it's built, we have to make sure that our
+1586.640000	1592.720000	 day one and day two configuration monitoring and alarm and all the practices around operations
+1592.720000	1597.360000	 is covered. And last but not least, we have to make sure that everything we have built so far,
+1597.360000	1602.080000	 not only is operationally excellent but also secure as well. So we have to make sure
+1602.080000	1608.400000	 that all of our security configurations or security tools are monitoring our traffic and they are
+1608.400000	1613.440000	 generating right blocks. Those logs can be analyzed anytime. And we also have to make sure that we are
+1613.440000	1618.960000	 creating a network design which is not only secure but auditable as well. So it's covering all the
+1618.960000	1625.440000	 compliance. So if you are hosting maybe PCI applications onto your cloud infra and what sort of
+1625.440000	1630.560000	 additional security tools you should be having or using what sort of design recommendations you
+1630.560000	1636.880000	 should have in your network side as well. Because although your data is stored in applications
+1636.880000	1642.880000	 or in astray buckets maybe but they are still flowing on a backbone network and you as a cloud
+1642.880000	1649.120000	 network architect is responsible for making sure that the network infra you have designed or
+1649.120000	1654.880000	 network connectivity you have put in place is also compliant with whatever regulations you are
+1654.880000	1661.600000	 following as in your organization. So I think these domain 1 to domain 4 they are pretty much like
+1661.600000	1668.560000	 covering everything. They also are almost equals. So you can see post one was 30% but then
+1668.560000	1675.040000	 VTG is like 26, 24, 25. So it's not like you can maybe take one of them lightly. You have to make
+1675.040000	1681.920000	 sure that all of the domains are covered. All the task statements are covered as part of preparation
+1681.920000	1686.640000	 for this exam. So that's why I said that because first topic is around building the infrastructure
+1686.640000	1692.240000	 you have first have to know the basic building blocks which is VPCs maybe route 53 another thing which
+1692.240000	1698.240000	 I can think of is different sort of load balancers maybe we can cover them. So they will be like
+1698.240000	1703.600000	 could kick start to our certification journey because once we know what sort of basics
+1703.600000	1710.240000	 AWS have in terms of AWS networking infrastructure then we can start building putting all other
+1710.240000	1714.880000	 building blocks on top of them. So once that baseline is created we can start creating our building
+1714.880000	1720.960000	 on top of that and then we can go deeper into which other services and which other tools we have to
+1720.960000	1727.520000	 use as part of AWS networking and how we can make sure that it's secure as well how we can make sure
+1727.520000	1734.080000	 that it's scalable as well because I was discussing to one of the one of my teammates one day and we were
+1734.080000	1740.240000	 having this sort of like animated discussions around security versus productivity so we don't want to
+1740.240000	1746.400000	 end up securing everything but in turn losing the productivity of the organization also we don't want
+1746.400000	1753.040000	 to be highly productive but then it's open to everyone to attack us. So both of these need to be
+1753.040000	1761.280000	 in place and that's why I feel that this certification fits perfectly into our cloud security
+1761.280000	1768.800000	 journey because it will help us in understanding how we can make sure that all the gates like I said
+1768.800000	1775.200000	 are closed or covered or monitored because ultimately people are coming from some ingress and
+1775.200000	1780.800000	 ingress point and by people I mean the attackers they are coming from some ingress and ingress points
+1780.800000	1786.960000	 if you know where those points are if you know how those points are open what sort of monitoring is
+1786.960000	1793.120000	 placed don't know those points then I think half the battle is won. So yeah I think this is really good
+1793.120000	1799.200000	 start to our certification journey. In next week episode I will be covering these basics which I
+1799.200000	1806.800000	 mentioned also I have some incredible idea around one of the topic which is like coming in my mind
+1806.800000	1815.440000	 for quite a while now which is discussing about AI versus anti AI now I'm not anti AI at all I love
+1815.440000	1821.680000	 using AI tools means they help us in not only improving my productivity but also delivering this
+1821.680000	1827.360000	 podcast as well I'm using sort of automation and AI tools to make sure that I'm delivering
+1827.360000	1833.520000	 nice hot content to you guys every week so that's why it's getting more normal now because I'm
+1833.520000	1839.680000	 using these AI tools to build build and deliver to you guys but then again there are people who don't
+1839.680000	1846.160000	 like AI because yeah some people are still quite reluctant to use AI tools because it's not something
+1846.160000	1851.200000	 they are either familiar with or they are really they feel like this is something which is
+1851.200000	1858.800000	 not not quite of ethical you know because people will feel like or it's it's actually heavily
+1858.800000	1864.560000	 discussed in the industry as well that if you're using AI tools then you're less using your thinking
+1864.560000	1869.920000	 and your own thought process you're less using your own brain to find up with unique ideas and
+1869.920000	1877.200000	 solutions and then you end up in completely relying on these AI tools which you're using in your
+1877.200000	1884.400000	 like improving the productivity so yeah I am writing something around AI versus anti AI and that
+1884.400000	1890.160000	 I'll be covering in next week episode so kind of like like just a normal my thoughts on that topic
+1890.160000	1896.480000	 and of course then I'll be covering in main episode AWS networking basics as well so those two
+1896.480000	1902.240000	 exciting topics will be there as part of next week episode please continue listening because every
+1902.240000	1908.880000	 week I'm trying my best to bring to you the better content than last week so I'm trying to improve
+1908.880000	1915.200000	 every week and it will help a lot that if you share the word if you subscribe if you comment if it's
+1915.200000	1920.400000	 something which is missing and I'll try to cover that I'll try to improve in that aspect as well
+1920.400000	1926.160000	 so that's it for today's episode I hope you enjoyed it and let's catch up in the next week's episode
+1926.160000	1928.986062	 goodbye and good luck
