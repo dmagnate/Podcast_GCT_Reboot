@@ -1,1 +1,14 @@
 https://thehackernews.com/2026/02/how-exposed-endpoints-increase-risk.html
+
+Today we're diving into a cybersecurity topic that's becoming increasingly urgent as more organisations spin up their own AI systems — and it comes down to a deceptively simple problem: the doors you leave open into your AI infrastructure.
+
+A recent piece from The Hacker News makes a compelling argument — the biggest security risk in LLM deployments isn't the AI model itself. It's everything around it. The APIs, the dashboards, the service connections — what security folks call "endpoints." Every new one you add is another potential door for an attacker.
+
+Here's the thing: these exposures rarely happen from one big mistake. It's more like death by a thousand cuts. A developer opens up an API for quick testing and forgets to add authentication. A hardcoded token never gets rotated. Someone builds a throwaway debug endpoint that just... never gets taken down. Sound familiar? These are the kinds of small, easy decisions made under deadline pressure that quietly become massive vulnerabilities.
+
+What makes this extra spicy in LLM environments is that these models are designed to connect things. They call databases, they talk to cloud services, they automate workflows. So when an attacker compromises one endpoint, they're not just in the model — they potentially have a jumping-off point across your entire infrastructure. The article calls it a "force multiplier," and that's a great way to put it. One door in, everywhere to go.
+There's also a whole category of risk around what are called "Non-Human Identities" — the API keys and service accounts that let AI models do their thing automatically. Teams often give these broad permissions to avoid friction, then forget about them. Over time, you end up with a sprawling web of over-privileged, long-lived credentials that nobody's keeping track of.
+
+The article's recommendations boil down to one core philosophy: assume attackers will get in, so limit the damage when they do. Practically speaking, that means applying zero-trust principles — every access request gets verified, every time. It means least-privilege access for both humans and machines. It means using Just-in-Time permissions so elevated access only exists when it's actively needed. And it means rotating credentials automatically rather than hoping nobody noticed when a token leaked.
+
+The bottom line is this — if you're building or running AI infrastructure, the security conversation can't just be about the model. It has to include every endpoint, every credential, and every implicit trust relationship you've built around it. Because in an automated system that runs 24/7 without human oversight, a single exposed door doesn't just let someone peek in — it hands them the keys to the whole building.
