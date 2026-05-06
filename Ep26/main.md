@@ -71,8 +71,7 @@ You get different types, each designed for specific workloads, architectures, an
 
 So let’s walk through the main ones you’ll encounter.
 
-Application Load Balancer, Network Load Balancer, Gateway Load Balancer, and the older Classic Load Balancer.
-
+Application Load Balancer, Network Load Balancer, Gateway Load Balancer
 Application Load Balancer — Layer 7 Intelligence
 
 The Application Load Balancer, often called ALB, operates at Layer 7, the application layer.
