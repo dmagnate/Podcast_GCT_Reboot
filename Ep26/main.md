@@ -369,3 +369,236 @@ Traffic inspection tools
 From a network segmentation standpoint, this creates controlled trust boundaries — meaning traffic is validated before reaching sensitive workloads.
 
 And from a high availability standpoint, Gateway Load Balancer ensures that security inspection itself doesn’t become a bottleneck or single point of failure.
+
+## Integrating AWS Load Balancers with Other AWS Services
+
+In AWS, load balancers rarely operate alone.
+They usually sit in the middle of a much bigger ecosystem of services that handle things like:
+
+
+Global traffic routing
+
+
+DDoS protection
+
+
+SSL certificates
+
+
+DNS resolution
+
+
+Kubernetes networking
+
+
+Content caching
+
+
+And once these services start working together, that’s when cloud architectures become truly scalable and production-ready.
+So in this segment, let’s walk through some of the most important AWS service integrations with load balancers.
+
+Route 53 — Directing Users to the Right Place
+Let’s start with Amazon Route 53.
+Before traffic even reaches a load balancer, users first need a way to find it.
+That’s where DNS comes in.
+Route 53 acts as the DNS layer that maps domain names — like example.com — to your load balancer endpoint.
+Now, what makes this integration powerful is that Route 53 isn’t just doing simple name resolution.
+It can also make routing decisions.
+For example:
+
+
+Route traffic based on latency
+
+
+Route traffic to specific regions
+
+
+Perform weighted routing between environments
+
+
+Automatically fail over if an endpoint becomes unhealthy
+
+
+Imagine your application is deployed in both London and Singapore.
+Route 53 can direct users to whichever region provides the lowest latency.
+And if one region fails, traffic can automatically shift to another.
+So together, Route 53 and AWS load balancers help create highly available global applications.
+
+CloudFront — Caching and Edge Performance
+Next up is Amazon CloudFront.
+This is AWS’s Content Delivery Network, or CDN.
+And this integration is extremely common.
+In many architectures, CloudFront sits in front of an Application Load Balancer.
+Here’s how the traffic flow works:
+User → CloudFront edge location → Load Balancer → Backend application
+Now why do this?
+Because CloudFront caches content closer to users at edge locations around the world.
+That means:
+
+
+Faster website performance
+
+
+Lower latency
+
+
+Reduced traffic hitting backend servers
+
+
+Static content like images, CSS files, JavaScript, and videos can often be served directly from CloudFront without even touching your application servers.
+But CloudFront also adds security benefits.
+It helps absorb large traffic spikes and integrates with DDoS protection capabilities.
+So instead of exposing your application directly to the internet, users first connect to the CDN edge network.
+That creates both a performance layer and a protective layer.
+
+AWS WAF — Filtering Malicious Traffic
+Now let’s talk security.
+One of the most important integrations is with AWS WAF.
+AWS WAF integrates directly with services like:
+
+
+Application Load Balancer
+
+
+CloudFront
+
+
+API Gateway
+
+
+And its job is to inspect HTTP and HTTPS requests before they reach your application.
+This is where you can block things like:
+
+
+SQL injection attempts
+
+
+Cross-site scripting attacks
+
+
+Malicious bots
+
+
+Geographic traffic you don’t trust
+
+
+Excessive request rates
+
+
+Think of WAF as an intelligent filter sitting at the edge of your application.
+Instead of your backend servers dealing with malicious traffic, AWS WAF stops bad requests earlier in the request path.
+And because it integrates directly with load balancers, security enforcement becomes centralized.
+You don’t need to configure filtering individually on every application server.
+
+AWS Certificate Manager — Simplifying HTTPS
+Now let’s talk about encryption.
+Modern applications are expected to use HTTPS everywhere.
+And managing SSL certificates manually can become painful very quickly.
+That’s where AWS Certificate Manager comes in.
+ACM integrates directly with services like:
+
+
+Application Load Balancer
+
+
+CloudFront
+
+
+API Gateway
+
+
+Instead of manually installing certificates on servers, you can attach ACM-managed certificates directly to the load balancer.
+AWS handles:
+
+
+Certificate provisioning
+
+
+Validation
+
+
+Renewals
+
+
+And honestly, automated certificate renewal alone saves administrators from a lot of future headaches.
+This integration also improves security posture because it encourages consistent encryption practices across environments.
+
+Global Accelerator — Improving Global Connectivity
+Now let’s move beyond DNS and talk about performance optimization at the network level.
+This is where AWS Global Accelerator comes in.
+Global Accelerator provides static IP addresses that route users into the AWS global network as quickly as possible.
+Instead of relying entirely on public internet routing, traffic enters AWS’s optimized backbone network earlier.
+Here’s the key difference compared to Route 53:
+Route 53 works at the DNS layer.
+Global Accelerator works at the network traffic layer.
+That means it can improve:
+
+
+Latency
+
+
+Packet loss
+
+
+Connection reliability
+
+
+Especially for globally distributed applications.
+Global Accelerator commonly sits in front of:
+
+
+Application Load Balancers
+
+
+Network Load Balancers
+
+
+This is particularly useful for applications like:
+
+
+Gaming platforms
+
+
+Real-time communications
+
+
+Global APIs
+
+
+Financial systems
+
+
+Where connection stability matters just as much as speed.
+
+Amazon EKS — Kubernetes and Load Balancing
+Now let’s talk containers and Kubernetes.
+When using Amazon Elastic Kubernetes Service, load balancers become a core part of exposing containerized applications.
+In Kubernetes, services can automatically provision AWS load balancers.
+For example:
+
+
+An ingress controller might create an Application Load Balancer
+
+
+A Kubernetes service of type LoadBalancer might create a Network Load Balancer
+
+
+This means applications deployed inside containers can automatically become reachable without manually configuring networking.
+And this is incredibly powerful for dynamic environments where containers are constantly scaling up and down.
+The load balancer continuously updates backend targets as Kubernetes workloads change.
+So the integration between EKS and AWS load balancing essentially automates traffic management for containerized applications.
+
+Putting It All Together
+Now when you combine all these integrations, you start seeing what modern AWS architectures really look like.
+A typical production flow might be:
+User → Route 53 → CloudFront → AWS WAF → Application Load Balancer → Kubernetes services running on EKS
+And maybe behind the scenes:
+
+
+ACM manages certificates
+
+
+Global Accelerator optimizes global connectivity
+
+
+Internal load balancers handle service-to-service communication
